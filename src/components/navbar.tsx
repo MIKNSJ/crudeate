@@ -9,7 +9,7 @@ function Navbar() {
     }
 
     return (
-        <div className="container-lg mx-auto max-w-screen-xl py-4 px-8 select-none">
+        <div className="container mx-auto max-w-screen-xl py-4 px-8 select-none">
             <div className="text-white flex justify-between items-center w-100">
                 <h1 className="font-bold text-3xl">crudeate</h1>
                 <nav className="hidden md:block">
@@ -22,11 +22,11 @@ function Navbar() {
                     </ul>
                 </nav>
 
-                <div onClick={navEnable} className="block md:hidden z-10">
+                <div onClick={navEnable} className="block md:hidden z-30">
                     {navStatus ? <IoClose size={50}/> : <IoMenu size={50}/>}
                 </div>
 
-                <nav className={navStatus ? "fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500" : "fixed pointer-events-none -right-[100%]"}>
+                <nav className={navStatus ? "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[100%]" : "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[50%]"}>
                     <ul className="flex flex-col items-end pt-36 px-10 gap-10 uppercase">
                         <li className="nav_link">Home</li>
                         <li className="nav_link">About</li>
