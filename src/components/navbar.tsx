@@ -26,7 +26,8 @@ function Navbar() {
                     {navStatus ? <IoClose size={50}/> : <IoMenu size={50}/>}
                 </div>
 
-                <nav className={navStatus ? "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[100%]" : "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[50%]"}>
+                <nav className={navStatus ? "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[100%]" :
+                    "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[125%]"}>
                     <ul className="flex flex-col items-end pt-36 px-10 gap-10 uppercase">
                         <li className="nav_link">Home</li>
                         <li className="nav_link">About</li>
