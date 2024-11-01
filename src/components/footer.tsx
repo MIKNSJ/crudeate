@@ -7,7 +7,7 @@ function Footer() {
 
                     <div className="flex justify-between items-center">
                         <p> @MIKNSJ 2024 </p>
-                        <a href = "https://github.com/MIKNSJ/credeate" target = "_blank" rel = "noopener noreferrer" id = "source">View Source</a>
+                        <a href = "https://github.com/MIKNSJ/crudeate" target = "_blank" rel = "noopener noreferrer" id = "source">View Source</a>
                     </div>
                 </div>
             </div>

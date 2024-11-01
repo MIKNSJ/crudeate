@@ -1,4 +1,5 @@
-import { ReactTyped } from "react-typed";
+import { ReactTyped } from "react-typed"
+import { Link } from "react-router-dom"
 
 function Hero() {
     return (
@@ -19,7 +20,8 @@ function Hero() {
                 />
                 <p className="font-bold text-lg md:text-xl uppercase">Never forget what you need to accomplish.</p>
                 <button className="demo_button bg-white text-black flex justify-center items-center overflow-hidden relative rounded">
-                    <a className="p-4 font-bold uppercase z-10" href="#"> Try the Demo </a>
+                    {/*<a className="p-4 font-bold uppercase z-10" href="#"> Try the Demo </a>*/}
+                    <Link to="/todo" className="p-4 font-bold uppercase z-10"> Try the Demo </Link>
                     <span></span>
                 </button>
             </div>

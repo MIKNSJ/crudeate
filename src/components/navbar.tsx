@@ -1,4 +1,5 @@
 import {IoMenu, IoClose} from "react-icons/io5";
+import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 
 function Navbar() {
@@ -14,7 +15,8 @@ function Navbar() {
                 <h1 className="font-bold text-3xl">crudeate</h1>
                 <nav className="hidden md:block">
                     <ul className="flex justify-between items-center gap-10 uppercase">
-                        <li>Home</li>
+                        {/*<li>Home</li>*/}
+                        <Link to="/">Home</Link>
                         <li>About</li>
                         <li>Showcase</li>
                         <li>Pricing</li>
@@ -26,10 +28,11 @@ function Navbar() {
                     {navStatus ? <IoClose size={50}/> : <IoMenu size={50}/>}
                 </div>
 
-                <nav className={navStatus ? "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[100%]" :
-                    "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500 -right-[125%]"}>
+                <nav className={navStatus ? "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 right-0 border-l border-slate-700 md:hidden ease-in-out duration-500" :
+                    "bg-[#1E272E] z-20 fixed w-[45%] h-full top-0 -right-96 border-l border-slate-700 md:hidden ease-in-out duration-500"}>
                     <ul className="flex flex-col items-end pt-36 px-10 gap-10 uppercase">
-                        <li className="nav_link">Home</li>
+                        {/*<li className="nav_link">Home</li>*/}
+                        <Link to="/" className="nav_link">Home</Link>
                         <li className="nav_link">About</li>
                         <li className="nav_link">Showcase</li>
                         <li className="nav_link">Pricing</li>
